@@ -1,0 +1,43 @@
+.editable-empty-mio, .editable-empty-mio:hover, .editable-empty-mio:focus{
+  font-style: italic;
+  color: #DD1144;
+  border-bottom: none;
+  border-bottom: dashed 1px  #0088cc !important;
+  text-decoration: none;
+}
+
+a.editable-click { text-decoration: none;border-bottom: dashed 1px #08c2; }
+
+.prev,.next {color: #0044cc}
+
+.btnmio { padding: 0px 8px; font-size:12px}
+
+.rosso { color: red; font-weight: 600;}
+.nero { color: black; font-weight: 500;}
+.giallo { color: #ffb400;  font-weight: 600;}
+.azzurro { color: #00B0F0;  font-weight: 600;}
+.verde { color: #70AD47;  font-weight: 600;}
+.grigio { color: #A6A6A6;  font-weight: 600;}
+.fucsia { color: #FF33CC;  font-weight: 600;}
+body {color:#337ab7; font-size:12px}
+
+
+
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+
+@media (min-height: 500px) {
+    .modal-body { height: 400px; }
+}
+
+@media (min-height: 800px) {
+    .modal-body { height: 600px; }
+}
+
+
