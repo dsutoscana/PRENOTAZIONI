@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery bsTable: Bootstrap Data Table Demo</title>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<link rel="stylesheet" href="https://bootswatch.com/flatly/bootstrap.min.css">
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bs-table.css">
+<script src="js/bs-table.js"></script>
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    body { background-color:#fafafa; font-family:'Roboto';}
+    .container { margin:150px auto;}
+    </style>
+</head>
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="//www.jqueryscript.net/table/Data-Table-jQuery-Plugin-Bootstrap-bsTable/">Download This Plugin</a></li>
+<li><a href="//www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div class="container">
+<h1>jQuery bsTable: Bootstrap Data Table Demo</h1>
+  <div class="table-data">
+    <table>
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>email</th>
+          <th>company</th>
+          <th>city</th>
+        </tr>
+      </thead>
+      <tbody id="fbody">
+        <tr>
+          <td>Galvin</td>
+          <td>nascetur.ridiculus.mus@estNuncullamcorper.net</td>
+          <td>Id Ante Institute</td>
+          <td>Vanderhoof</td>
+        </tr>
+        <tr>
+          <td>Brady</td>
+          <td>non.feugiat@nibh.com</td>
+          <td>Hymenaeos Mauris Consulting</td>
+          <td>Sassocorvaro</td>
+        </tr>
+        <tr>
+          <td>Keane</td>
+          <td>diam@gravidasitamet.net</td>
+          <td>Placerat Augue Sed PC</td>
+          <td>São José</td>
+        </tr>
+        <tr>
+          <td>Noble</td>
+          <td>sem.Nulla.interdum@ultrices.com</td>
+          <td>Facilisis Foundation</td>
+          <td>Stafford</td>
+        </tr>
+        <tr>
+          <td>Barry</td>
+          <td>pharetra@sit.ca</td>
+          <td>Tempor Diam Dictum Corp.</td>
+          <td>Stralsund</td>
+        </tr>
+        <tr>
+          <td>Davis</td>
+          <td>elit.dictum.eu@anunc.com</td>
+          <td>Et Rutrum Non Foundation</td>
+          <td>Sadiqabad</td>
+        </tr>
+        <tr>
+          <td>Rajah</td>
+          <td>vulputate.dui@nibhsitamet.co.uk</td>
+          <td>Porttitor Ltd</td>
+          <td>San Martino in Badia/St. Martin in Thurn</td>
+        </tr>
+        <tr>
+          <td>Nathaniel</td>
+          <td>nisl.elementum.purus@malesuadavelvenenatis.com</td>
+          <td>Et Nunc Quisque Corp.</td>
+          <td>Großpetersdorf</td>
+        </tr>
+        <tr>
+          <td>Benedict</td>
+          <td>a.neque.Nullam@natoque.com</td>
+          <td>Scelerisque Lorem Ipsum Ltd</td>
+          <td>Parkland County</td>
+        </tr>
+        <tr>
+          <td>Marsden</td>
+          <td>interdum@etmagnisdis.ca</td>
+          <td>Etiam Associates</td>
+          <td>Monteroni d'Arbia</td>
+        </tr>
+        <tr>
+          <td>Wing</td>
+          <td>vitae.erat@nullamagna.ca</td>
+          <td>Mattis Semper Associates</td>
+          <td>Novo Hamburgo</td>
+        </tr>
+        <tr>
+          <td>Blake</td>
+          <td>ut@rutrum.edu</td>
+          <td>Aliquam Limited</td>
+          <td>Castellina in Chianti</td>
+        </tr>
+        <tr>
+          <td>Elton</td>
+          <td>amet.ornare@ametmetusAliquam.ca</td>
+          <td>Tincidunt Orci Quis Limited</td>
+          <td>Caldarola</td>
+        </tr>
+        <tr>
+          <td>Lawrence</td>
+          <td>primis.in.faucibus@mifelisadipiscing.co.uk</td>
+          <td>At Iaculis Inc.</td>
+          <td>Sittard</td>
+        </tr>
+        <tr>
+          <td>Murphy</td>
+          <td>egestas@ligulaeu.edu</td>
+          <td>Lectus Convallis PC</td>
+          <td>Champorcher</td>
+        </tr>
+        <tr>
+          <td>Stephen</td>
+          <td>Duis@ornaretortorat.co.uk</td>
+          <td>Consectetuer Adipiscing Elit Associates</td>
+          <td>Nandyal</td>
+        </tr>
+        <tr>
+          <td>Ulric</td>
+          <td>Sed.congue@ullamcorpermagnaSed.net</td>
+          <td>Diam Pellentesque Incorporated</td>
+          <td>Friedrichshafen</td>
+        </tr>
+        <tr>
+          <td>Robert</td>
+          <td>In@Maurismolestie.org</td>
+          <td>Massa Non Ante Associates</td>
+          <td>Comano</td>
+        </tr>
+        <tr>
+          <td>Rigel</td>
+          <td>In.mi@utlacusNulla.org</td>
+          <td>Ut Tincidunt Industries</td>
+          <td>Glain</td>
+        </tr>
+        <tr>
+          <td>Galvin</td>
+          <td>neque@acmetus.edu</td>
+          <td>Tempor Augue Limited</td>
+          <td>Okpoko</td>
+        </tr>
+        <tr>
+          <td>Lamar</td>
+          <td>mauris@fringillapurusmauris.org</td>
+          <td>Faucibus Lectus LLP</td>
+          <td>Halifax</td>
+        </tr>
+        <tr>
+          <td>Kasper</td>
+          <td>eget@imperdietornare.com</td>
+          <td>Sociis Company</td>
+          <td>Kermt</td>
+        </tr>
+        <tr>
+          <td>Devin</td>
+          <td>lacus.Cras@adipiscing.net</td>
+          <td>Quis Lectus Nullam Corporation</td>
+          <td>Hannover</td>
+        </tr>
+        <tr>
+          <td>Fritz</td>
+          <td>cursus.Integer@Nunc.org</td>
+          <td>Sed Auctor Ltd</td>
+          <td>Phoenix</td>
+        </tr>
+        <tr>
+          <td>Elliott</td>
+          <td>posuere@scelerisque.net</td>
+          <td>Nascetur Ridiculus Ltd</td>
+          <td>Thuillies</td>
+        </tr>
+        <tr>
+          <td>Rashad</td>
+          <td>lobortis.quam@quispedePraesent.edu</td>
+          <td>Massa Non Company</td>
+          <td>Saint-Malo</td>
+        </tr>
+        <tr>
+          <td>Craig</td>
+          <td>aliquet.magna.a@erosProinultrices.com</td>
+          <td>In Sodales Elit Foundation</td>
+          <td>Noduwez</td>
+        </tr>
+        <tr>
+          <td>Jerry</td>
+          <td>nascetur@FuscemollisDuis.org</td>
+          <td>Ultrices Vivamus Rhoncus Incorporated</td>
+          <td>Indianapolis</td>
+        </tr>
+        <tr>
+          <td>Akeem</td>
+          <td>ut.nisi@velitduisemper.org</td>
+          <td>Rhoncus Proin Nisl Limited</td>
+          <td>Prince George</td>
+        </tr>
+        <tr>
+          <td>Timon</td>
+          <td>semper.Nam@orcilacusvestibulum.co.uk</td>
+          <td>Non Vestibulum Nec LLC</td>
+          <td>Bo'ness</td>
+        </tr>
+        <tr>
+          <td>Graham</td>
+          <td>magna.Praesent.interdum@imperdietnec.ca</td>
+          <td>Urna Nec Luctus Corporation</td>
+          <td>Lancaster</td>
+        </tr>
+        <tr>
+          <td>Shad</td>
+          <td>Curae.Phasellus@Donec.org</td>
+          <td>Nec Company</td>
+          <td>Sterrebeek</td>
+        </tr>
+        <tr>
+          <td>Keefe</td>
+          <td>pulvinar.arcu.et@ac.org</td>
+          <td>At Auctor Associates</td>
+          <td>Crowsnest Pass</td>
+        </tr>
+        <tr>
+          <td>August</td>
+          <td>est@vitaedolorDonec.ca</td>
+          <td>Auctor Mauris Vel Inc.</td>
+          <td>Frankfort</td>
+        </tr>
+        <tr>
+          <td>Thor</td>
+          <td>elit.Etiam@egestas.net</td>
+          <td>Sit Amet Risus Corp.</td>
+          <td>Hull</td>
+        </tr>
+        <tr>
+          <td>Porter</td>
+          <td>tortor@placerat.org</td>
+          <td>Lacus Nulla Institute</td>
+          <td>Leuze</td>
+        </tr>
+        <tr>
+          <td>Cain</td>
+          <td>ac.mattis.semper@nisi.org</td>
+          <td>Non Justo Proin Associates</td>
+          <td>Elbistan</td>
+        </tr>
+        <tr>
+          <td>Ulric</td>
+          <td>consectetuer.euismod@vitaeerat.edu</td>
+          <td>Lorem Sit LLP</td>
+          <td>Stratford</td>
+        </tr>
+        <tr>
+          <td>Valentine</td>
+          <td>felis.purus@metusfacilisis.net</td>
+          <td>Metus Ltd</td>
+          <td>Orlando</td>
+        </tr>
+        <tr>
+          <td>Baxter</td>
+          <td>orci@sapiengravida.ca</td>
+          <td>Mauris Morbi Non Inc.</td>
+          <td>Estevan</td>
+        </tr>
+        <tr>
+          <td>Hall</td>
+          <td>nisl.elementum@massarutrum.com</td>
+          <td>Sem Eget Limited</td>
+          <td>San Massimo</td>
+        </tr>
+        <tr>
+          <td>Gavin</td>
+          <td>Etiam.gravida.molestie@gravida.edu</td>
+          <td>Vitae Aliquam LLP</td>
+          <td>Montemesola</td>
+        </tr>
+        <tr>
+          <td>Denton</td>
+          <td>nibh@eu.com</td>
+          <td>Lacinia Sed Corporation</td>
+          <td>Kessenich</td>
+        </tr>
+        <tr>
+          <td>Charles</td>
+          <td>vitae@Fusce.org</td>
+          <td>Convallis Est Vitae Company</td>
+          <td>Gisborne</td>
+        </tr>
+        <tr>
+          <td>Harrison</td>
+          <td>augue.id@Inscelerisque.co.uk</td>
+          <td>Elit Elit LLC</td>
+          <td>Levin</td>
+        </tr>
+        <tr>
+          <td>Paki</td>
+          <td>dapibus.ligula.Aliquam@parturient.co.uk</td>
+          <td>Vel Arcu Eu Industries</td>
+          <td>Penicuik</td>
+        </tr>
+        <tr>
+          <td>Judah</td>
+          <td>vitae@Phasellus.org</td>
+          <td>Pede Sagittis Corporation</td>
+          <td>Ruisbroek</td>
+        </tr>
+        <tr>
+          <td>Cooper</td>
+          <td>id.ante.dictum@viverraMaecenasiaculis.co.uk</td>
+          <td>Curae; Phasellus Ornare Associates</td>
+          <td>Cittanova</td>
+        </tr>
+        <tr>
+          <td>Oliver</td>
+          <td>malesuada.augue@sapienAenean.ca</td>
+          <td>Molestie Tellus Associates</td>
+          <td>Chanco</td>
+        </tr>
+        <tr>
+          <td>Herman</td>
+          <td>Nunc@etmalesuada.ca</td>
+          <td>Semper Cursus PC</td>
+          <td>Vietri di Potenza</td>
+        </tr>
+        <tr>
+          <td>Joshua</td>
+          <td>Praesent@Integer.co.uk</td>
+          <td>Enim Consulting</td>
+          <td>Jemappes</td>
+        </tr>
+        <tr>
+          <td>Scott</td>
+          <td>dictum.Phasellus@gravidasagittisDuis.co.uk</td>
+          <td>Non Egestas Limited</td>
+          <td>Schriek</td>
+        </tr>
+        <tr>
+          <td>Marshall</td>
+          <td>interdum@rutrum.net</td>
+          <td>Feugiat Non Institute</td>
+          <td>Aurillac</td>
+        </tr>
+        <tr>
+          <td>Timon</td>
+          <td>massa.Vestibulum.accumsan@ut.org</td>
+          <td>Dignissim Lacus Associates</td>
+          <td>Armungia</td>
+        </tr>
+        <tr>
+          <td>Jackson</td>
+          <td>purus.gravida@ante.net</td>
+          <td>Magna Consulting</td>
+          <td>Ereğli</td>
+        </tr>
+        <tr>
+          <td>Brody</td>
+          <td>dictum.Proin.eget@risus.edu</td>
+          <td>Class Aptent Inc.</td>
+          <td>Herentals</td>
+        </tr>
+        <tr>
+          <td>Garth</td>
+          <td>a.magna@Aliquam.edu</td>
+          <td>Magna Ut Tincidunt Company</td>
+          <td>Kumluca</td>
+        </tr>
+        <tr>
+          <td>Rogan</td>
+          <td>egestas.rhoncus.Proin@InfaucibusMorbi.ca</td>
+          <td>Augue Sed Molestie Limited</td>
+          <td>Nizamabad</td>
+        </tr>
+        <tr>
+          <td>Owen</td>
+          <td>Nunc@telluseuaugue.ca</td>
+          <td>Ac Ipsum LLP</td>
+          <td>Opoeteren</td>
+        </tr>
+        <tr>
+          <td>Allistair</td>
+          <td>Ut@sitametconsectetuer.com</td>
+          <td>Adipiscing Industries</td>
+          <td>Sant'Angelo a Fasanella</td>
+        </tr>
+        <tr>
+          <td>Boris</td>
+          <td>molestie@Nam.edu</td>
+          <td>Egestas Aliquam Institute</td>
+          <td>Opheylissem</td>
+        </tr>
+        <tr>
+          <td>Levi</td>
+          <td>Lorem.ipsum.dolor@ridiculusmus.co.uk</td>
+          <td>Augue PC</td>
+          <td>Nashville</td>
+        </tr>
+        <tr>
+          <td>Kasimir</td>
+          <td>et.commodo.at@ultriciessemmagna.com</td>
+          <td>Adipiscing Enim Institute</td>
+          <td>Schiltigheim</td>
+        </tr>
+        <tr>
+          <td>Raja</td>
+          <td>commodo.at@Innecorci.net</td>
+          <td>Nec Enim PC</td>
+          <td>Grande Cache</td>
+        </tr>
+        <tr>
+          <td>Ali</td>
+          <td>Donec@quisarcuvel.edu</td>
+          <td>Elementum Dui Quis Company</td>
+          <td>Manoppello</td>
+        </tr>
+        <tr>
+          <td>Magee</td>
+          <td>est@egetlacusMauris.org</td>
+          <td>Semper Industries</td>
+          <td>Gurgaon</td>
+        </tr>
+        <tr>
+          <td>Gary</td>
+          <td>Donec.est@fermentummetus.co.uk</td>
+          <td>Fusce Diam Nunc Company</td>
+          <td>Zignago</td>
+        </tr>
+        <tr>
+          <td>Keaton</td>
+          <td>Donec.tincidunt@ornare.com</td>
+          <td>Mattis Ornare Incorporated</td>
+          <td>Talgarth</td>
+        </tr>
+        <tr>
+          <td>Lester</td>
+          <td>sit.amet@elitdictum.ca</td>
+          <td>Tempus Inc.</td>
+          <td>Iowa City</td>
+        </tr>
+        <tr>
+          <td>Cedric</td>
+          <td>eget.odio.Aliquam@Phasellusataugue.co.uk</td>
+          <td>Leo In Limited</td>
+          <td>Frasnes-lez-Gosselies</td>
+        </tr>
+        <tr>
+          <td>Branden</td>
+          <td>porttitor.scelerisque@a.org</td>
+          <td>Quam LLC</td>
+          <td>Ancarano</td>
+        </tr>
+        <tr>
+          <td>William</td>
+          <td>lobortis@convallisest.net</td>
+          <td>Lectus Foundation</td>
+          <td>Itegem</td>
+        </tr>
+        <tr>
+          <td>Quentin</td>
+          <td>convallis.dolor@vitae.ca</td>
+          <td>Vulputate Posuere Vulputate Inc.</td>
+          <td>Meppel</td>
+        </tr>
+        <tr>
+          <td>Zeph</td>
+          <td>magna@ligulaNullamfeugiat.com</td>
+          <td>Sem Institute</td>
+          <td>Graneros</td>
+        </tr>
+        <tr>
+          <td>Dustin</td>
+          <td>sed.dui.Fusce@felisullamcorperviverra.com</td>
+          <td>Ut Eros Company</td>
+          <td>Osorno</td>
+        </tr>
+        <tr>
+          <td>Neil</td>
+          <td>a.odio.semper@lorem.edu</td>
+          <td>Ligula Institute</td>
+          <td>Moerkerke</td>
+        </tr>
+        <tr>
+          <td>Robert</td>
+          <td>a@semconsequat.com</td>
+          <td>Mi Felis Adipiscing Company</td>
+          <td>Rocca d'Arce</td>
+        </tr>
+        <tr>
+          <td>Chaim</td>
+          <td>enim.nec@arcu.ca</td>
+          <td>Montes Nascetur Ridiculus Corp.</td>
+          <td>Ingooigem</td>
+        </tr>
+        <tr>
+          <td>Wade</td>
+          <td>consectetuer.cursus@amagna.edu</td>
+          <td>Varius Nam Porttitor Foundation</td>
+          <td>Pepingen</td>
+        </tr>
+        <tr>
+          <td>Aladdin</td>
+          <td>sapien@tortor.ca</td>
+          <td>A Odio Incorporated</td>
+          <td>Saharanpur</td>
+        </tr>
+        <tr>
+          <td>Chase</td>
+          <td>consequat.dolor.vitae@utmolestiein.org</td>
+          <td>Elit Etiam Laoreet LLC</td>
+          <td>Contulmo</td>
+        </tr>
+        <tr>
+          <td>Barrett</td>
+          <td>posuere.vulputate.lacus@molestieorci.edu</td>
+          <td>Quisque Imperdiet Associates</td>
+          <td>Fogo</td>
+        </tr>
+        <tr>
+          <td>Gray</td>
+          <td>nulla.Donec.non@justositamet.net</td>
+          <td>Vitae Ltd</td>
+          <td>Paradise</td>
+        </tr>
+        <tr>
+          <td>Drew</td>
+          <td>Duis.at.lacus@liberolacus.org</td>
+          <td>Metus Vivamus Euismod LLP</td>
+          <td>Yeovil</td>
+        </tr>
+        <tr>
+          <td>Fulton</td>
+          <td>mattis.Integer@ligulaeu.net</td>
+          <td>Elit Erat Vitae Incorporated</td>
+          <td>Besançon</td>
+        </tr>
+        <tr>
+          <td>Davis</td>
+          <td>in.hendrerit.consectetuer@idlibero.org</td>
+          <td>Aenean Massa Corp.</td>
+          <td>Matagami</td>
+        </tr>
+        <tr>
+          <td>Camden</td>
+          <td>consequat.auctor@Duis.co.uk</td>
+          <td>Et Pede Industries</td>
+          <td>Alloa</td>
+        </tr>
+        <tr>
+          <td>Ivor</td>
+          <td>Aliquam.ultrices@massa.ca</td>
+          <td>Ligula Nullam Feugiat Corporation</td>
+          <td>Lidköping</td>
+        </tr>
+        <tr>
+          <td>Burke</td>
+          <td>tellus.Nunc@vitaesodales.com</td>
+          <td>Suscipit Industries</td>
+          <td>Kawartha Lakes</td>
+        </tr>
+        <tr>
+          <td>Hedley</td>
+          <td>Etiam@venenatisa.edu</td>
+          <td>Convallis Ante Lectus Institute</td>
+          <td>Fort McPherson</td>
+        </tr>
+        <tr>
+          <td>Ronan</td>
+          <td>Maecenas.mi@tristique.org</td>
+          <td>Maecenas Consulting</td>
+          <td>Pike Creek</td>
+        </tr>
+        <tr>
+          <td>Justin</td>
+          <td>tellus@auctorullamcorper.ca</td>
+          <td>Facilisis Vitae LLC</td>
+          <td>Bruderheim</td>
+        </tr>
+        <tr>
+          <td>Marvin</td>
+          <td>magna@libero.org</td>
+          <td>Sociis LLP</td>
+          <td>Allentown</td>
+        </tr>
+        <tr>
+          <td>Garth</td>
+          <td>odio.sagittis.semper@sociis.co.uk</td>
+          <td>Cursus Non Egestas LLP</td>
+          <td>Meer</td>
+        </tr>
+        <tr>
+          <td>Christopher</td>
+          <td>arcu.Vestibulum@augueac.co.uk</td>
+          <td>Velit Aliquam Nisl LLC</td>
+          <td>Barrhead</td>
+        </tr>
+        <tr>
+          <td>Brent</td>
+          <td>diam.vel@rhoncusNullam.edu</td>
+          <td>Iaculis LLC</td>
+          <td>Comblain-la-Tour</td>
+        </tr>
+        <tr>
+          <td>Yoshio</td>
+          <td>ligula.tortor@Mauris.ca</td>
+          <td>Nunc Limited</td>
+          <td>Valparaíso de Goiás</td>
+        </tr>
+        <tr>
+          <td>Colin</td>
+          <td>Sed@tristiquepharetra.co.uk</td>
+          <td>Aliquam Consulting</td>
+          <td>Ramsey</td>
+        </tr>
+        <tr>
+          <td>Ferdinand</td>
+          <td>mauris.id@ametnulla.net</td>
+          <td>Tristique Incorporated</td>
+          <td>Aklavik</td>
+        </tr>
+        <tr>
+          <td>Kennedy</td>
+          <td>Donec.non@Vivamus.co.uk</td>
+          <td>Phasellus In Associates</td>
+          <td>Buizingen</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+	$(document).ready(function() {
+        'use strict';
+
+		$('.table-data').bsTable(navStatus,true,undefined,undefined,true);
+
+		//callback to execute when row is clicked. used to navigate to next page
+		function navStatus(pid) {
+			alert('You clicked on a row: ' + pid.text());
+		};
+
+
+    });
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
