@@ -99,9 +99,9 @@ $config = array(
 		'LIB_DIR'  => "/WWW/prenotazioni.it/website/lib",
 
 
-		'Host' => 'in.smtpok.com',
-		'Username' => 's48195_5',        // SMTP username
-		'Password' => 'mbPew?gglY',                           //  SMTP password
+		'Host' => 'myhost.com',
+		'Username' => 'myusername',        // SMTP username, ecrypted!
+		'Password' => 'mypassword',                           //  SMTP password, ecrypted!
 		'SMTPSecure' => 'tls',                           //   Enable TLS encryption, `ssl` also accepted
 		'Port' => 25,
 		'setFrom' => 'noreply@MY_AZIENDA.it',
